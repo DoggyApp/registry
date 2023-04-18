@@ -5,11 +5,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/login")
+@RequestMapping("/registry")
 @CrossOrigin
 public class LoginController {
 
-    @GetMapping
+    @GetMapping("/test")
     public ResponseEntity<String> testResponse() {
         String testString = "working";
         return ResponseEntity.status(200).body(testString);
